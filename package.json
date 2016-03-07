@@ -1,0 +1,28 @@
+{
+  "name": "joshchwang",
+  "version": "1.0.0",
+  "description": "A professional portfolio website to display my work",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaHwang/joshchwang.git"
+  },
+  "author": "Joshua Hwang <joshchwang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaHwang/joshchwang/issues"
+  },
+  "homepage": "https://github.com/JoshuaHwang/joshchwang#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sass": "^2.2.0"
+  }
+}
