@@ -1,0 +1,44 @@
+//-- COLORS
+// Solids
+$red:       #F35D66;
+$blue:      #36B8D5;
+$black:     #020202;
+$white:     #FDF9FD;
+$gray:      #D6D0D2;
+$lightGray: #F4F4F4;
+$darkGray:  #655D59;
+
+// Gradients
+
+//-- FONTS
+// Size
+$bigHeader: 45px;
+$header:    36px;
+$subHeader: 30px;
+$paragraph: 16px;
+
+// Weight
+$skinny: 100;
+$thin:   200;
+$normal: 300;
+$chubby: 400;
+$thick:  500;
+$fat:    700;
+
+//-- MARGINS
+$five:    5px;
+$ten:     10px;
+$fifteen: 15px;
+$twenty:  20px;
+$thirty:  30px;
+$forty:   40px;
+$fifty:   50px;
+
+@mixin auto {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+}
+
+//-- BEGIN CSS
