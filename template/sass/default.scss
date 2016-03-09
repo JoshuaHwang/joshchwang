@@ -14,8 +14,9 @@ $darkGray:  #655D59;
 // Size
 $bigHeader: 45px;
 $header:    36px;
-$subHeader: 30px;
+$logo:      30px;
 $paragraph: 16px;
+$navLink:   14px;
 
 // Weight
 $skinny: 100;
@@ -24,6 +25,10 @@ $normal: 300;
 $chubby: 400;
 $thick:  500;
 $fat:    700;
+
+// Spacing
+$linkGap: 1px;
+$gap:     3px;
 
 //-- MARGINS
 $five:    5px;
@@ -41,4 +46,35 @@ $fifty:   50px;
   }
 }
 
+//-- PADDING
+$navPad: 25px;
+
 //-- BEGIN CSS
+.header-container {
+
+  .logo {
+    font: {
+      size: $logo;
+      weight: $fat;
+    }
+    letter-spacing: $gap;
+    margin-top: $ten;
+  }
+
+  .nav {
+    padding-top: $navPad;
+  }
+
+  .nav-links {
+    float: right;
+    color: $black;
+    font: {
+      size: $navLink;
+      weight: $thick;
+    }
+    letter-spacing: $linkGap;
+    text-decoration: none;
+    text-align: center;
+    margin-left: $thirty;
+  }
+}
