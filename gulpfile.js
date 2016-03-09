@@ -11,7 +11,7 @@ gulp.task('nodemon', function() {
     }).on('start');
   });
 
-gulp.task('jade', funcition() {
+gulp.task('jade', function() {
   console.log('Running jade templating..');
   gulp.src('./template/jade/**/*.jade')
     .pipe(jade())
