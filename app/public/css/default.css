@@ -1,0 +1,36 @@
+html, body {
+  font-family: 'Lato', sans-serif; }
+
+.header-container .logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 10px; }
+
+.header-container .nav {
+  padding-top: 30px; }
+
+.header-container .nav-links {
+  float: right;
+  color: #020202;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  margin-left: 30px; }
+
+.header-container .nav-links:hover {
+  border-bottom: 1px solid #020202;
+  padding-bottom: 5px;
+  transition: all 0.3s ease; }
+
+.header-container .hook-row {
+  margin-top: 80px; }
+
+.header-container .hook {
+  font-family: 'Lora', serif;
+  font-size: 70px;
+  font-weight: 700; }

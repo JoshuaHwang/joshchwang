@@ -12,22 +12,21 @@ $darkGray:  #655D59;
 
 //-- FONTS
 // Size
+$hookSize:  70px;
 $bigHeader: 45px;
 $header:    36px;
 $logo:      30px;
 $paragraph: 16px;
-$navLink:   14px;
+$navLink:   12px;
 
 // Weight
-$skinny: 100;
-$thin:   200;
-$normal: 300;
-$chubby: 400;
-$thick:  500;
-$fat:    700;
+$thin:   300;
+$normal: 400;
+$chubby: 700;
+$fat:    900;
 
 // Spacing
-$linkGap: 1px;
+$linkGap: 2px;
 $gap:     3px;
 
 //-- MARGINS
@@ -38,6 +37,7 @@ $twenty:  20px;
 $thirty:  30px;
 $forty:   40px;
 $fifty:   50px;
+$hookMar: 80px;
 
 @mixin auto {
   margin: {
@@ -47,15 +47,20 @@ $fifty:   50px;
 }
 
 //-- PADDING
-$navPad: 25px;
+$navPad: 30px;
 
 //-- BEGIN CSS
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
 .header-container {
 
   .logo {
     font: {
+      family: 'Lato', sans-serif;
       size: $logo;
-      weight: $fat;
+      weight: $chubby;
     }
     letter-spacing: $gap;
     margin-top: $ten;
@@ -70,11 +75,30 @@ $navPad: 25px;
     color: $black;
     font: {
       size: $navLink;
-      weight: $thick;
+      weight: $normal;
     }
     letter-spacing: $linkGap;
     text-decoration: none;
     text-align: center;
+    border-bottom: 1px solid transparent;
     margin-left: $thirty;
+  }
+
+  .nav-links:hover {
+    border-bottom: 1px solid $black;
+    padding-bottom: $five;
+    transition: all 0.3s ease;
+  }
+
+  .hook-row {
+    margin-top: $hookMar;
+  }
+
+  .hook {
+    font: {
+      family: 'Lora', serif;
+      size: $hookSize;
+      weight: $chubby;
+    }
   }
 }
