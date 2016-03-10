@@ -9,18 +9,19 @@ html, body {
   margin-top: 10px; }
 
 .header-container .nav {
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-align: center; }
 
 .header-container .nav-links {
-  float: right;
   color: #020202;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 2px;
   text-decoration: none;
   text-align: center;
   border-bottom: 1px solid transparent;
-  margin-left: 30px; }
+  margin-left: 20px;
+  margin-right: 20px; }
 
 .header-container .nav-links:hover {
   border-bottom: 1px solid #020202;
@@ -33,4 +34,9 @@ html, body {
 .header-container .hook {
   font-family: 'Lora', serif;
   font-size: 70px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: -10px; }
+
+.header-container .summary {
+  letter-spacing: 1px;
+  margin-top: 10px; }

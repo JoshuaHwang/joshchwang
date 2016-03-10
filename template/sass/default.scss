@@ -17,7 +17,7 @@ $bigHeader: 45px;
 $header:    36px;
 $logo:      30px;
 $paragraph: 16px;
-$navLink:   12px;
+$navLink:   10px;
 
 // Weight
 $thin:   300;
@@ -26,6 +26,7 @@ $chubby: 700;
 $fat:    900;
 
 // Spacing
+$one:     1px;
 $linkGap: 2px;
 $gap:     3px;
 
@@ -68,10 +69,10 @@ html, body {
 
   .nav {
     padding-top: $navPad;
+    text-align: center;
   }
 
   .nav-links {
-    float: right;
     color: $black;
     font: {
       size: $navLink;
@@ -81,7 +82,10 @@ html, body {
     text-decoration: none;
     text-align: center;
     border-bottom: 1px solid transparent;
-    margin-left: $thirty;
+    margin: {
+      left: $twenty;
+      right: $twenty;
+    }
   }
 
   .nav-links:hover {
@@ -100,5 +104,11 @@ html, body {
       size: $hookSize;
       weight: $chubby;
     }
+    margin-bottom: -10px;
+  }
+
+  .summary {
+    letter-spacing: $one;
+    margin-top: $ten;
   }
 }
