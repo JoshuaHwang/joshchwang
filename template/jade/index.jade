@@ -20,13 +20,15 @@ html(lang="en-us")
   body
     div.container.header-container
       div.row
-        div.medium-12.columns
-          nav.nav
-            a(href="#" class="nav-links") ABOUT        
-            a(href="#" class="nav-links") PORTFOLIO
-            a(href="#" class="nav-links") RESUME
-            a(href="#" class="nav-links") CONTACT
-          button.hamburger#[span toggle menu]
+        //- div.medium-6.columns
+        //-   nav.nav
+        //-     a(href="#" class="nav-links") ABOUT        
+        //-     a(href="#" class="nav-links") PORTFOLIO
+        //-     a(href="#" class="nav-links") RESUME
+        //-     a(href="#" class="nav-links") CONTACT
+        div.medium-2.medium-offset-10.columns
+          div.nav-button
+            button#hamburger #[span ]
       div.row.hook-row
         div.medium-10.columns
           h2.hook HELLO,
@@ -36,4 +38,5 @@ html(lang="en-us")
       div.row
         div.medium-12.columns
           h3.about-title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    script(src="public/js/main.js")
 
