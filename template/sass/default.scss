@@ -55,8 +55,9 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+@import 'nav';
+
 .header-container {
-  @import 'nav';
 
   .logo {
     font: {
