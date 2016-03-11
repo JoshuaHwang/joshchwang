@@ -15,7 +15,7 @@ html, body {
 .header-container .nav-links {
   color: #020202;
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 2px;
   text-decoration: none;
   text-align: center;
@@ -28,15 +28,36 @@ html, body {
   padding-bottom: 5px;
   transition: all 0.3s ease; }
 
+.header-container .hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+
 .header-container .hook-row {
-  margin-top: 80px; }
+  margin-top: 120px; }
 
 .header-container .hook {
-  font-family: 'Lora', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 70px;
   font-weight: 700;
   margin-bottom: -10px; }
 
 .header-container .summary {
+  color: #655D59;
   letter-spacing: 1px;
   margin-top: 10px; }
+
+.about-title {
+  font-family: 'Playfair Display', serif; }
