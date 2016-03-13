@@ -4,13 +4,13 @@ html, body {
 #hamburger {
   float: right;
   display: block;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 65px;
-  height: 65px;
-  transition: background 0.3s; }
+  width: 60px;
+  height: 60px;
+  z-index: 2; }
 
 #hamburger:focus {
   outline: none; }
@@ -21,8 +21,8 @@ html, body {
   top: 44px;
   left: 18px;
   right: 18px;
-  height: 3px;
-  background: #020202; }
+  height: 2px;
+  background-color: #020202; }
 
 #hamburger span::before,
 #hamburger span::after {
@@ -30,7 +30,7 @@ html, body {
   display: block;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #020202;
   content: ""; }
 
@@ -41,12 +41,12 @@ html, body {
   bottom: -8px; }
 
 #hamburger span {
-  transition: background 0s 0.3s; }
+  transition: background 0s 0.4s; }
 
 #hamburger span::before,
 #hamburger span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s; }
+  transition-duration: 0.4s, 0.4s;
+  transition-delay: 0.4s, 0s; }
 
 #hamburger span::before {
   transition-property: top, transform; }
@@ -60,15 +60,47 @@ html, body {
 
 #hamburger.is-active span::before {
   top: 0;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  z-index: 10; }
 
 #hamburger.is-active span::after {
   bottom: 0;
-  transform: rotate(-225deg); }
+  transform: rotate(-225deg);
+  z-index: 10; }
 
 #hamburger.is-active span::before,
 #hamburger.is-active span::after {
-  transition-delay: 0s, 0.3s; }
+  background-color: #FDF9FD;
+  transition-delay: 0s, 0.4s;
+  z-index: 10; }
+
+#nav {
+  background-color: rgba(2, 2, 2, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1; }
+  #nav .top-nav {
+    padding-top: 150px; }
+  #nav .nav-links {
+    display: block;
+    color: #FDF9FD;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px; }
+  #nav .nav-links:hover {
+    text-decoration: line-through;
+    transition: text-decoration 0.4s ease; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
 
 .header-container .logo {
   font-family: 'Lato', sans-serif;
@@ -76,26 +108,6 @@ html, body {
   font-weight: 700;
   letter-spacing: 3px;
   margin-top: 10px; }
-
-.header-container .nav {
-  padding-top: 30px;
-  text-align: center; }
-
-.header-container .nav-links {
-  color: #020202;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-align: center;
-  border-bottom: 1px solid transparent;
-  margin-left: 20px;
-  margin-right: 20px; }
-
-.header-container .nav-links:hover {
-  border-bottom: 1px solid #020202;
-  padding-bottom: 5px;
-  transition: all 0.3s ease; }
 
 .header-container .hook-row {
   margin-top: 120px; }
@@ -110,6 +122,9 @@ html, body {
   color: #655D59;
   letter-spacing: 1px;
   margin-top: 10px; }
+
+.what {
+  z-index: 0; }
 
 .about-title {
   font-family: 'Playfair Display', serif; }

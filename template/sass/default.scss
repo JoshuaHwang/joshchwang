@@ -17,7 +17,7 @@ $bigHeader: 45px;
 $header:    36px;
 $logo:      30px;
 $paragraph: 16px;
-$navLink:   10px;
+$navLink:   18px;
 
 // Weight
 $thin:   300;
@@ -57,6 +57,45 @@ html, body {
 
 @import 'nav';
 
+#nav {
+  background-color: rgba($black, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+
+  .top-nav {
+    padding-top: 150px
+  }
+
+  .nav-links {
+    display: block;
+    color: $white;
+    font: {
+      size: $navLink;
+      weight: $chubby;
+    }
+    letter-spacing: $linkGap;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .nav-links:hover {
+    text-decoration: line-through;
+    transition: text-decoration 0.4s ease;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .header-container {
 
   .logo {
@@ -67,33 +106,6 @@ html, body {
     }
     letter-spacing: $gap;
     margin-top: $ten;
-  }
-
-  .nav {
-    padding-top: $navPad;
-    text-align: center;
-  }
-
-  .nav-links {
-    color: $black;
-    font: {
-      size: $navLink;
-      weight: $chubby;
-    }
-    letter-spacing: $linkGap;
-    text-decoration: none;
-    text-align: center;
-    border-bottom: 1px solid transparent;
-    margin: {
-      left: $twenty;
-      right: $twenty;
-    }
-  }
-
-  .nav-links:hover {
-    border-bottom: 1px solid $black;
-    padding-bottom: $five;
-    transition: all 0.3s ease;
   }
 
   .hook-row {
@@ -114,6 +126,10 @@ html, body {
     letter-spacing: $one;
     margin-top: $ten;
   }
+}
+
+.what {
+  z-index: 0;
 }
 
 .about-title {
