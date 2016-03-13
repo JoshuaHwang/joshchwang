@@ -1,91 +1,12 @@
-//-- COLORS
-// Solids
-$red:       #F35D66;
-$blue:      #36B8D5;
-$black:     #020202;
-$white:     #FDF9FD;
-$gray:      #D6D0D2;
-$lightGray: #F4F4F4;
-$darkGray:  #655D59;
+//-- GLOBAL VARIABLES
+@import 'base';
 
-// Gradients
-
-//-- FONTS
-// Size
-$hookSize:  70px;
-$bigHeader: 45px;
-$header:    36px;
-$logo:      30px;
-$paragraph: 16px;
-$navLink:   18px;
-
-// Weight
-$thin:   300;
-$normal: 400;
-$chubby: 700;
-$fat:    900;
-
-// Spacing
-$one:     1px;
-$linkGap: 2px;
-$gap:     3px;
-
-//-- MARGINS
-$five:    5px;
-$ten:     10px;
-$fifteen: 15px;
-$twenty:  20px;
-$thirty:  30px;
-$forty:   40px;
-$fifty:   50px;
-$hookMar: 120px;
-
-@mixin auto {
-  margin: {
-    right: auto;
-    left: auto;
-  }
-}
-
-//-- PADDING
-$navPad: 30px;
+// NAV
+@import 'nav/nav';
 
 //-- BEGIN CSS
 html, body {
   font-family: 'Lato', sans-serif;
-}
-
-@import 'nav';
-
-#nav {
-  background-color: rgba($black, 0.9);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  z-index: 1;
-
-  .top-nav {
-    padding-top: 150px
-  }
-
-  .nav-links {
-    display: block;
-    color: $white;
-    font: {
-      size: $navLink;
-      weight: $chubby;
-    }
-    letter-spacing: $linkGap;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .nav-links:hover {
-    text-decoration: line-through;
-    transition: text-decoration 0.4s ease;
-  }
 }
 
 .hide {
@@ -96,7 +17,7 @@ html, body {
   display: block;
 }
 
-.header-container {
+.fold-container {
 
   .logo {
     font: {

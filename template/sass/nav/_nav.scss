@@ -1,0 +1,33 @@
+// NAV SCSS
+@import 'navButton';
+
+#nav {
+  background-color: rgba($black, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+
+  .top-nav {
+    padding-top: $navPad;
+  }
+
+  .nav-links {
+    display: block;
+    color: $white;
+    font: {
+      size: $navLink;
+      weight: $chubby;
+    }
+    letter-spacing: $linkGap;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .nav-links:hover {
+    text-decoration: line-through;
+    transition: all 0.4s ease;
+  }
+}
