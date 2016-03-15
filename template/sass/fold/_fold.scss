@@ -3,8 +3,11 @@
 
   .logo {
     font: {
+      family: $lora;
       size: $logo;
       weight: $chubby;
     }
+    letter-spacing: $one;
+    margin-top: $twenty;
   }
 }

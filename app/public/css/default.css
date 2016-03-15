@@ -35,10 +35,10 @@ html, body {
   content: ""; }
 
 #hamburger span::before {
-  top: -8px; }
+  top: -7px; }
 
 #hamburger span::after {
-  bottom: -8px; }
+  bottom: -7px; }
 
 #hamburger span {
   transition: background 0s 0.4s; }
@@ -98,8 +98,11 @@ html, body {
     transition: all 0.4s ease; }
 
 .fold-container .logo {
-  font-size: 30px;
-  font-weight: 700; }
+  font-family: "Lora", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px; }
 
 .hide {
   display: none; }
