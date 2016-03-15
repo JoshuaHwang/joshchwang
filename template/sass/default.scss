@@ -2,12 +2,10 @@
 @import 'base';
 
 // NAV
+@import 'nav/navButton';
 @import 'nav/nav';
 
-//-- BEGIN CSS
-html, body {
-  font-family: 'Lato', sans-serif;
-}
+@import 'fold/fold';
 
 .hide {
   display: none;
@@ -15,38 +13,6 @@ html, body {
 
 .show {
   display: block;
-}
-
-.fold-container {
-
-  .logo {
-    font: {
-      family: 'Lato', sans-serif;
-      size: $logo;
-      weight: $chubby;
-    }
-    letter-spacing: $gap;
-    margin-top: $ten;
-  }
-
-  .hook-row {
-    margin-top: $hookMar;
-  }
-
-  .hook {
-    font: {
-      family: 'Playfair Display', serif;
-      size: $hookSize;
-      weight: $chubby;
-    }
-    margin-bottom: -10px;
-  }
-
-  .summary {
-    color: $darkGray;
-    letter-spacing: $one;
-    margin-top: $ten;
-  }
 }
 
 .what {

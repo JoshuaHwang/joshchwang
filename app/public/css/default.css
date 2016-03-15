@@ -80,6 +80,7 @@ html, body {
   width: 100%;
   height: 100%;
   text-align: center;
+  display: none;
   z-index: 1; }
   #nav .top-nav {
     padding-top: 150px; }
@@ -94,34 +95,17 @@ html, body {
     margin-top: 30px; }
   #nav .nav-links:hover {
     text-decoration: line-through;
-    transition: text-decoration 0.4s ease; }
+    transition: all 0.4s ease; }
+
+.fold-container .logo {
+  font-size: 30px;
+  font-weight: 700; }
 
 .hide {
   display: none; }
 
 .show {
   display: block; }
-
-.header-container .logo {
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-top: 10px; }
-
-.header-container .hook-row {
-  margin-top: 120px; }
-
-.header-container .hook {
-  font-family: 'Playfair Display', serif;
-  font-size: 70px;
-  font-weight: 700;
-  margin-bottom: -10px; }
-
-.header-container .summary {
-  color: #655D59;
-  letter-spacing: 1px;
-  margin-top: 10px; }
 
 .what {
   z-index: 0; }
