@@ -5,3 +5,12 @@ $('.hamburger').click(function(e) {
 
   $('.nav').fadeToggle('fast');
 });
+
+//-- SCROLL
+$('.scroll').click(discover);
+
+function discover() {
+  $('html, body').animate({
+    scrollTop: $('.about-me').offset().top
+  }, 1000);
+}

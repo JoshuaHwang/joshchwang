@@ -20,7 +20,7 @@
       size: 2.7em;
       weight: $fat;
     }
-    letter-spacing: $one;
+    // letter-spacing: $one;
   }
 
   .korean {
@@ -28,7 +28,8 @@
   }
 
   .slash {
-    font-size: $header;
+    font-size: $bigHeader;
+    font-weight: $chubby;
     margin: {
       top: -5px;
       bottom: 5px;
@@ -52,4 +53,9 @@
   letter-spacing: $one;
   text-align: center;
   margin-top: $hookMar;
+
+  .scroll {
+    color: $black;
+    text-decoration: none;
+  }
 }
