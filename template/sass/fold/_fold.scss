@@ -1,13 +1,55 @@
 // FOLD SCSS
-.fold-container {
 
-  .logo {
+.logo {
+  font: {
+    family: $lora;
+    size: $logo;
+    weight: $chubby;
+  }
+  letter-spacing: $one;
+  margin-top: $twenty;
+}
+
+.hook-row {
+  text-align: center;
+  margin-top: $hookMar;
+
+  .hook {
     font: {
-      family: $lora;
-      size: $logo;
-      weight: $chubby;
+      family: $lato;
+      size: 2.7em;
+      weight: $fat;
     }
     letter-spacing: $one;
-    margin-top: $twenty;
   }
+
+  .korean {
+    color: $gray;
+  }
+
+  .slash {
+    font-size: $header;
+    margin: {
+      top: -5px;
+      bottom: 5px;
+    }
+  }
+}
+
+.occupation-row {
+  text-align: center;
+
+  .title {
+    margin-bottom: 10px;
+  }
+}
+
+.scroll-row {
+  font: {
+    family: $lora;
+    weight: $chubby;
+  }
+  letter-spacing: $one;
+  text-align: center;
+  margin-top: $hookMar;
 }

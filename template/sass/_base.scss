@@ -12,6 +12,7 @@ $darkGray:  #655D59;
 
 //-- FONTS
 // Family
+$lato:     'Lato', sans-serif;
 $lora:     'Lora', sans-serif;
 $playfair: 'Playfair Display', serif;
 
@@ -42,7 +43,7 @@ $twenty:  20px;
 $thirty:  30px;
 $forty:   40px;
 $fifty:   50px;
-$hookMar: 120px;
+$hookMar: 150px;
 
 @mixin auto {
   margin: {
