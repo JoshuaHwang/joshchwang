@@ -5,20 +5,8 @@
 @import 'nav/navButton';
 @import 'nav/nav';
 
+// FOLD
 @import 'fold/fold';
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.what {
-  z-index: 0;
-}
-
-.about-title {
-  font-family: 'Playfair Display', serif;
-}
+// ABOUT
+@import 'about/about';

@@ -1,0 +1,40 @@
+// ABOUT SCSS
+.about-row {
+  margin-top: $content;
+}
+
+.name, 
+.age,
+.background {
+  color: $gray;
+  font: {
+    family: $lato;
+    size: $paragraph;
+    weight: $normal;
+  }
+  letter-spacing: $linkGap;
+}
+
+.my-name,
+.my-age {
+  font: {
+    family: $lora;
+    size: $logo;
+    weight: $chubby;
+  }
+  letter-spacing: $one;
+  margin-bottom: $logoMar;
+}
+
+.my-background {
+  font: {
+    family: $lora;
+    size: $logo;
+    weight: $chubby;
+  }
+}
+
+// .my-name:hover {
+//   background-color: $red;
+//   transition: all 0.3s ease;
+// }

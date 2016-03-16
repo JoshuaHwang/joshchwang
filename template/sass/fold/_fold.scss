@@ -7,7 +7,7 @@
     weight: $chubby;
   }
   letter-spacing: $one;
-  margin-top: $twenty;
+  margin-top: $logoMar;
 }
 
 .hook-row {
@@ -16,23 +16,18 @@
 
   .hook {
     font: {
-      family: $lato;
-      size: 2.7em;
-      weight: $fat;
+      family: $lora;
+      size: 4.4em;
+      weight: $chubby;
     }
-    // letter-spacing: $one;
-  }
-
-  .korean {
-    color: $gray;
   }
 
   .slash {
     font-size: $bigHeader;
-    font-weight: $chubby;
+    font-weight: $normal;
     margin: {
       top: -5px;
-      bottom: 5px;
+      bottom: 10px;
     }
   }
 }
@@ -41,7 +36,14 @@
   text-align: center;
 
   .title {
+    color: $darkGray;
+    font-size: $jobFont;
+    letter-spacing: $one;
     margin-bottom: 10px;
+  }
+
+  .ion-close-round {
+    font-size: 12px;
   }
 }
 

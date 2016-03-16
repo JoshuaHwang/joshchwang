@@ -11,10 +11,10 @@ html(lang="en-us")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
-    //-- GOOGLE ICONS
-    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    //-- IONICONS
+    link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet")
     //-- GOOGLE FONTS
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Lora:400,700|Playfair+Display:400,900,700' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Lora:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css')
     //- CSS
     link(rel="stylesheet" href="public/css/default.css")
   body
@@ -24,17 +24,17 @@ html(lang="en-us")
           div.nav-button
             button.hamburger #[span ]
       div.nav
-        a(href="#" class="nav-links top-nav") ABOUT    
+        a(href="#" class="nav-links top-nav about-nav") ABOUT    
         a(href="#" class="nav-links") PORTFOLIO
         a(href="#" class="nav-links") RESUME
-        a(href="#" class="nav-links") CONTACT
+        a(href="#" class="nav-links") CONNECT
     div.container.fold-container
       div.row
         div.medium-4.columns.end
           h1.logo HWNG
       div.row.hook-row
         div.small-6.small-offset-3.medium-10.medium-offset-1
-          h2.hook JOSHUA #[span.korean 세진] HWANG
+          h2.hook 세진
           p.slash /
       div.row.occupation-row
         div.small-8.small-offset-2.columns
@@ -43,8 +43,16 @@ html(lang="en-us")
       div.row.scroll-row
         div.small-4.small-offset-4.columns
           a.scroll scroll
-    //- div.container.about-container
-    //-   div.row
-    //-     h3.about-me ABOUT
+    div.container.about-container
+      div.row.about-row
+        div.medium-4.columns
+          h3.name NAME
+          p.my-name joshua hwang
+          h3.age AGE
+          p.my-age twenty one
+        div.medium-8.columns
+          h3.background BACKGROUND
+          p.my-background i am the son of #[span.dad peter] & #[span.mom jeanne] hwang
+
     script(src="public/js/main.js")
 

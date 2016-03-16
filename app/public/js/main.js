@@ -8,9 +8,10 @@ $('.hamburger').click(function(e) {
 
 //-- SCROLL
 $('.scroll').click(discover);
+$('.about-nav').click(discover);
 
 function discover() {
   $('html, body').animate({
-    scrollTop: $('.about-me').offset().top
+    scrollTop: $('.about-row').offset().top
   }, 1000);
 }

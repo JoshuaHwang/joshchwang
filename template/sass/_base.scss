@@ -4,8 +4,8 @@ $red:       #F35D66;
 $blue:      #36B8D5;
 $black:     #020202;
 $white:     #FDF9FD;
-$gray:      #D6D0D2;
-$lightGray: #F4F4F4;
+$gray:      #AFAFAF;
+$lightGray: #FAFAFA;
 $darkGray:  #655D59;
 
 // Gradients
@@ -15,14 +15,16 @@ $darkGray:  #655D59;
 $lato:     'Lato', sans-serif;
 $lora:     'Lora', sans-serif;
 $playfair: 'Playfair Display', serif;
+$inconso:  'Inconsolata', ;
 
 // Size
 $hookSize:  70px;
-$bigHeader: 42px;
+$bigHeader: 46px;
 $header:    36px;
 $logo:      25px;
 $paragraph: 16px;
 $navLink:   18px;
+$jobFont:   14px;
 
 // Weight
 $thin:   300;
@@ -39,11 +41,12 @@ $gap:     3px;
 $five:    5px;
 $ten:     10px;
 $fifteen: 15px;
-$twenty:  20px;
+$logoMar: 25px;
 $thirty:  30px;
 $forty:   40px;
 $fifty:   50px;
-$hookMar: 150px;
+$content: 130px;
+$hookMar: 155px;
 
 @mixin auto {
   margin: {
@@ -57,4 +60,5 @@ $navPad: 150px;
 
 html, body {
   font-family: 'Lato', sans-serif;
+  background-color: $lightGray;
 }
