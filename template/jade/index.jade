@@ -1,22 +1,80 @@
 doctype html
 html(lang="en-us")
   head
-    title JH
+    title Joshua Hwang
     meta(http-equiv="X-US-Compatible" content="IE=Edge")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width")
-    //- JQUERY
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js")
-    //- FOUNDATION
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.js")
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.css")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
-    //-- IONICONS
-    link(href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet")
-    //-- GOOGLE FONTS
-    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900|Lora:400,700' rel='stylesheet' type='text/css')
-    //- CSS
+    // JQUERY
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js")    
+    // SKELETON
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet")
+    // IONICONS
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet")
+    // GOOGLE FONTS
+    link(link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Roboto+Condensed:400,700|Overpass+Mono" rel="stylesheet")
+    // SCROLL ANIMATION 
+    script(src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js")
+    // CSS    
     link(rel="stylesheet" href="public/css/default.css")
-  body
-    script(src="public/js/main.js")
+  body    
+    div.nav-row
+      div.name-columns
+        a(href="/" class="my-name") JJJJOSHUA
+      div.nav-columns      
+        a(id="webdev-link" class="nav-links") WEBDEV
+        a(id="photo-link" class="nav-links") PHOTO
+        a(href="/about" id="about-link" class="nav-links") ABOUT
+    div.container
+      div.row.header-row
+        div.twelve.columns.header-columns
+          p.hook LET'S CREATE TOGETHER
+          p.profile UI/FRONT END DEVELOPER FROM #[img(src="public/images/orange.png" class="orange")] COUNTY
+          p.side-hustle WITH SOME PHOTOGRAPHY ON THE SIDE
+          p.side-hustle #[span.bold CONTACT:] JOSHCHWANG@GMAIL.COM
+    div.container.content-container#webdev-anchor
+      div.row
+        div.twelve.columns
+          p#work-title WEBDEV
+      div.webdev-row
+        div.twelve.columns.webdev-columns
+          div.webdev-div
+            p.dash \\\
+            p.project-title OC WEBKINGS
+            div.device-div
+              img(src="public/images/ocwebkings-logo.png" class="ocwebkings-image")
+            p.title WEB DEVELOPER
+            p.description OC WEBKINGS is a web and mobile app development firm. I helped in creating web and mobile applications for the following clients: #[a(href="https://palatenation.com/#/" class="site" target="_blank") Palate Nation], #[a(href="http://tiedupapp.com/website/index.html" class="site" target="_blank") Tied Up], #[a(href="https://adoptionnetwork.com/" class="site" target="_blank") Adoption Network], and #[a(href="http://www.askbrien.com/" class="site" target="_blank") askBrien].
+          div.webdev-div
+            p.dash \\\
+            p.project-title KOOKOO GRILL
+            div.device-div 
+              img(src="public/images/mac-iphone.png" class="device-image")
+            p.title SINGLE PAGE APPLICATION
+            p.description Commissioned to create a single page application for the restaurant #[a(href="http://www.kookoogrill.com" class="site" target="_blank") KooKoo Grill]. A fully responsive and mobile-friendly webpage.
+          div.webdev-div
+            p.dash \\\
+            p.project-title OCCS
+            div.device-div
+              img(src="public/images/occs-logo.png" class="occs-image")
+            p.title CODING BOOTCAMP
+            p.description Completed an immersive 12 week full MEAN stack JavaScript boot camp with 540+ hours of hands on coding. During this boot camp we created 3 projects that were managed with Github, deployed to Heroku, and wire framed with Balsamiq.      
+    div.container.content-container#photo-anchor
+      div.row.photo-row
+        div.twelve.columns
+          p#work-title PHOTO
+      div.photo-row
+        div.twelve.columns.content-columns
+          a(href="/photography-no-feels-009" class="project-link")
+            div.project-div.no-feels009-div
+            p.photo-title NO FEELS 009 @ THE UNION    
+          a(href="/photography-nohran-the-yost" class="project-link")
+            div.project-div.nohran-yost1-div            
+            p.photo-title NOHRAN @ THE YOST 
+          //- a(href="#" id="" class="project-link")
+          //-   div.project-div.portland2017-div
+          //-   p.photo-title PORTLAND - WINTER 2016          
+    script(src="public/js/main.js" type="text/javascript")
 
+          
+          

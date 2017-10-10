@@ -1,3 +1,417 @@
 //-- GLOBAL VARIABLES
 @import 'base';
 
+.nav-row {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.name-columns {
+  width: 50%;
+  display: inline-block;
+  margin-top: 25px;
+
+  .my-name {
+    font-family: $robotoX;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $black;
+    display: inline-block;
+  }
+}
+
+.nav-columns {
+  text-align: right;
+  width: 50%;
+  display: inline-block;
+
+  .nav-links {
+    font-family: $robotoX;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $black;
+    margin-right: 40px;
+    transition: ease-in-out .2s;
+  }
+
+  .nav-links:hover {
+    color: $solidOrange;
+    cursor: pointer;
+  }
+}
+
+.header-row {
+  height: 700px;
+
+  .hook {
+    font-family: $source;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .profile {
+    font-family: $source;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .orange {
+    vertical-align: top;
+  }
+
+  .side-hustle {
+    font-family: $source;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: -25px;
+  }
+
+  .bold {
+    font-weight: 600;
+    // color: $red;
+  }
+}
+
+.content-container {
+  background-color: $lightGray;
+  // height: auto;
+  margin-bottom: 50px;
+}
+
+#work-title {
+  font-family: $source;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.webdev-columns {
+  text-align: right;
+
+  .webdev-div {
+    margin-bottom: 150px;
+  }
+
+  .project-title {
+    font-family: $source;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-right: -15px;
+    text-align: right;
+  }
+
+  .dash {
+    font-family: $robotoX;
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: -15px;
+    float: left;
+  }
+
+  .device-div {
+    text-align: center;
+  }
+
+  .ocwebkings-image {
+    width: 50%;
+  }
+
+  .device-image {
+    width: 65%;
+  }
+
+  .occs-image {
+    width: 20%;
+  }
+
+  .webdev-div {
+    text-align: center;
+  }
+
+  .title {
+    font-family: $source;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+  }
+
+  .description {
+    font-family: $overpass;
+    font-size: 16px;
+  }
+
+  .site {
+    color: $black;
+    background-position: -0% 0;
+    background-size: 200% auto;
+    text-decoration: none;
+
+  }
+
+  .site:hover {
+    background-position: -99.99% 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, $orange 50%);
+    transition: background-position 0.3s ease-in-out;
+  }
+}
+
+.content-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.no-feels009-div {
+  background: url('../../public/images/no-feels009/AC6B7881.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.nohran-yost1-div {
+  background: url('../../public/images/nohran-yost1/AC6B7354.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.portland2017-div {
+  background: url('../../public/images/portland2017/AC6B3661.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.project-link {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.project-div {
+  height: 225px;
+  width: 225px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+  border: 15px solid #FFFFFF;
+  transition: ease-in-out .2s;
+
+  .work {
+    font-family: $robotoX;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $white;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 75px;
+  }
+
+  .description {
+    font-family: $source;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $white;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.photo-title {
+  font-family: $overpass;
+  color: $black;
+  margin-top: -10px;
+  transition: ease-in-out .2s;
+}
+
+.photo-title:hover {
+  color: $solidOrange;
+}
+
+.carousel-img {
+  height: 350px;
+}
+
+.project-div:hover > .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+// About style
+.about-body {
+  background-color: $lightOrange;
+}
+
+.joshua-container {
+  margin-top: 50px;
+  z-index: 1000;
+
+  .joshua {
+    font-family: $robotoX;
+    font-weight: 700;
+    letter-spacing: 15px;
+    color: $black;
+  }
+
+  .joshua-upsidedown {
+    font-family: $robotoX;
+    font-weight: 700;
+    letter-spacing: 15px;
+    // color: $solidOrange;
+    -webkit-transform:rotate(-180deg);
+    -moz-transform:rotate(-180deg);
+    -o-transform:rotate(-180deg);
+    transform:rotate(-180deg);
+    margin-top: -50px;
+  }
+}
+
+.about-me-container {
+  z-index: 1;
+
+  .about-me {
+    font-family: $overpass;
+    // color: $lightGray;
+  }
+
+  .social-links {
+    font-family: $overpass;
+    color: $black;
+    display: block;
+    transition: ease-in-out .2s;
+  }
+
+  .home-link {
+    font-family: $overpass;
+    color: $white;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .social-links:hover {
+    color: $white;
+  }
+
+  .self {
+    width: 85%;
+    height: auto;
+    border: 25px solid $lightGray;
+  }
+}
+
+// PHOTO CSS
+.event-container {
+  margin-top: 150px;
+}
+
+.img-div {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+}
+
+.event-title {
+  font-family: $source;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.event-description {
+  font-family: $overpass;
+}
+
+@media (max-width: 495px) { // desktop
+  .name-columns {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .my-name {
+    margin-left: -15px;
+  }
+
+  .nav-columns {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .hook {
+    font-size: 20px;
+  }
+
+  .profile {
+    font-size: 28px;
+  }
+
+  .orange {
+    width: 35px;
+    height: 35px;
+  }
+
+  .side-hustle {
+    font-size: 14px;
+  }
+
+  .joshua,
+  .joshua-upsidedown {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 496px) {
+  .my-name {
+    margin-left: 40px;
+  }
+
+  .hook {
+    font-size: 24px;
+  }
+
+  .profile {
+    font-size: 32px;
+  }
+
+  .orange {
+    width: 40px;
+    height: 40px;
+  }
+
+  .side-hustle {
+    font-size: 18px;
+  }
+
+  .joshua,
+  .joshua-upsidedown {
+    font-size: 82px;
+  }
+
+  .joshua-upsidedown {
+    margin-bottom: -50px;
+  }
+}
+
+// .oc {
+//   background-image: url('../images/palate-nation.png');
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+//
+//
+// @media (min-width: 600px) { // desktop
+//
+// }
+//
+// @media (max-width: 600px) { // mobile
+//
+// }

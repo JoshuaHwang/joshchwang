@@ -1,6 +1,6 @@
-var gulp    = require('gulp');
-var jade    = require('gulp-jade');
-var sass    = require('gulp-sass');
+var gulp = require('gulp');
+var jade = require('gulp-jade');
+var sass = require('gulp-sass');
 var nodemon = require('gulp-nodemon');
 
 var app = 'app/app.js';
