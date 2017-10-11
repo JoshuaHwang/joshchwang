@@ -40,7 +40,8 @@ a {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-top: 275px; }
   .header-row .profile {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
@@ -211,7 +212,8 @@ a {
     font-family: "Overpass Mono", sans-serif;
     color: #FDF9FD;
     display: block;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 15px; }
   .about-me-container .social-links:hover {
     color: #FDF9FD; }
   .about-me-container .self {

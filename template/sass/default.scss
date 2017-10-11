@@ -51,6 +51,7 @@
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    margin-top: 275px;
   }
 
   .profile {
@@ -241,6 +242,17 @@
   opacity: 0.5;
 }
 
+// .footer-container {
+//
+//   .portrait-div {
+//     text-align: center;
+//   }
+//
+//   .self-portrait {
+//     width: 85%;
+//   }
+// }
+
 // About style
 .about-body {
   background-color: $lightOrange;
@@ -290,6 +302,7 @@
     color: $white;
     display: block;
     margin-top: 50px;
+    margin-bottom: 15px;
   }
 
   .social-links:hover {
